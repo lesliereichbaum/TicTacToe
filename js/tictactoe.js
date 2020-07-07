@@ -35,7 +35,7 @@ function placeXOrO(squareNumber) {
 }
 
         //This function plays placement sound. 
-        Audio('./media/hiss.mp3');
+        audio('./media/bubbles.mp3');
         //This condition checks to see if it is computers turn.
         if(activePlayer === 'O') {
             //This function disables clicking for comptuer choice.
@@ -115,7 +115,6 @@ function checkWinConditions() {
         setTimeout(function () {restGame(); }, 1000);
     }
 
-
     //This function checks if an array includes 3 strings.
     //It is used to check for each win condition.
     function arrayIncludes(squareA, squareB, squareC) {
@@ -134,7 +133,7 @@ function disableClick() {
     //This makes our body unclickable.
     body.style.pointerEvents = "none";
     //This makes our body clickable again after 1 second.
-    setTimeout(function () {body.style.pointerEvents = "auto";}, 1000);
+    setTimeout(function () {body.style.pointerEvents = 'auto';}, 1000);
 }
 
 //This function takes a string parameter of the path you set earlier for 
