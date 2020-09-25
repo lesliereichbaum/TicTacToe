@@ -1,4 +1,8 @@
-h1 {text-align: center}
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 /* This container includes our table and our canvas. */
 .center-container {
@@ -35,4 +39,8 @@ canvas {
     z-index: 10;
     /* This property makes our canvas invisible */
     pointer-events: none;
+}
+
+body {
+    background-image: url(../images/board.jpg);
 }
